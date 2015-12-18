@@ -11,10 +11,28 @@ TP InfoVis ITBA - Big Data 2015/2
 
 El objetivo principal del trabajo práctico consistió en hacer un procesamiento de los datos para luego hacer visualizaciones de manera eficiente.
 
-Con las visualizaciones realizadas, la meta era encontrar si en el dataset podían detectarse comportamientos de búsquedas fuera de lo convencional, para luego intentar hacer un análisis de la posible razón de la anomalía.
+Con las visualizaciones realizadas, la meta era encontrar si en el dataset podían detectarse comportamientos de búsquedas fuera de lo convencional, para luego intentar hacer un análisis de la posible razón de los mismos.
 
 ## Procesamiento de la información
 
+El procesamiento del dataset brindado para la realización del trabajo práctico se dividió en tres etapas.
+
+### Primera etapa de procesamiento
+
+En la primera etapa del procesamiento de datos, el objetivo fue encontrar las búsquedas (compuestas de una latitud y longitud) que fueran únicas y la cantidad de veces que aparece en el dataset.
+
+Utilizando [Apache Spark](https://en.wikipedia.org/wiki/Apache_Spark), un framework para cómputo distribuido, se realizó el procesamiento del dataset original para detectar la cantidad total de búsquedas para cada combinación de latitud y longitud únicas en el dataset.
+
+La implementación de este procesamiento se puede ver en [ProcessSearchedPlacesByCount.scala](https://github.com/ipeluffo/InfoVisDataProcessing/blob/master/src/main/scala/ipeluffo/ProcessSearchedPlacesByCount.scala).
+
+Este script, implementado utilizando Scala como lenguaje de programación, tiene la ventaja que puede ejecutarse fácilmente con datasets de cualquier tamaño en un cluster para hacer un procesamiento paralelo de manera más eficiente y rápida.
+
+Una vez ejecutado el script con el dataset original, la salida contendra el listado de combinaciones únicas de latitudes y longitudes ordenadas por la cantidad de veces que aparecen.
+
+Por ejemplo, las primeras 10 combinaciones que más se repiten son:
+```
+
+```
 
 ## Visualizaciones y análisis
 
