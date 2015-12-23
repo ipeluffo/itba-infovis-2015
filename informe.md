@@ -27,12 +27,29 @@ La implementación de este procesamiento se puede ver en [ProcessSearchedPlacesB
 
 Este script, implementado utilizando Scala como lenguaje de programación, tiene la ventaja que puede ejecutarse fácilmente con datasets de cualquier tamaño en un cluster para hacer un procesamiento paralelo de manera más eficiente y rápida.
 
-Una vez ejecutado el script con el dataset original, la salida contendra el listado de combinaciones únicas de latitudes y longitudes ordenadas por la cantidad de veces que aparecen.
+Una vez ejecutado el script con el dataset original, la salida contendra el listado de pares de latitud y longitud únicos ordenados por la cantidad de veces que aparecen.
 
 Por ejemplo, las primeras 10 combinaciones que más se repiten son:
 ```
 
 ```
+
+### Segunda etapa de procesamiento: Georeferencia inversa
+
+Con el procesamiento realizado en la primera etapa, se procedió a utilizar un servicio web de georeferenciamiento inverso para obtener la información sobre la esquina más próxima a cada una de las búsquedas. Esto permitiría luego mostrar las búsquedas con los nombre de las calles además de la latitud y la longitud.
+
+El servicio web utilizado para obtener los nombres de las calles de la intersección buscada fue [GeoNames](http://www.geonames.org/). Más precisamente, el webservice (WS) utilizado fue [findNearestIntersectionOSM](http://www.geonames.org/maps/osm-reverse-geocoder.html#findNearestIntersectionOSM).
+
+Para procesar el dataset y obtener la información del WS, se desarrolló un script en Python: [cornersMapping.py](https://github.com/ipeluffo/itba-infovis-2015/blob/master/cornersMapping.py) 
+
+Una vez obtenida la información de las esquinas, se generó un dataset enriquecido de información.
+
+A cotinuación se pueden ver algunas entradas del dataset generado:
+```
+
+```
+
+### Tercera etapa de procesamiento: Enriquecer dataset original
 
 ## Visualizaciones y análisis
 
