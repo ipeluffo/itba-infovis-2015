@@ -183,8 +183,10 @@ Se encontraron los siguientes artículos:
 Como se puede observar, el primer artículo hace referencia a un evento especial de Misión Solidaria realizado por la radio Metro exactamente en la esquina de Av. Dorrego y Zapiola entre 6 y las 20 hs.
 De esta manera, se pudo encontrar la razón detras de la cantidad significativa y diferenciadora de búsquedas que se hicieron el 13 de Agosto.
 
+-> ![Misión solidaria](https://raw.githubusercontent.com/ipeluffo/itba-infovis-2015/master/mision%20solidaria.png) <-
+
 El segundo artículo hace mención a la entrega de entradas para otro evento en el mismo lugar. Sin embargo, este artículo no podría tomarse como la razón detras del hecho encontrado en el análisis de las visualizaciones.
 
-De esta manera, se puede concluir que el procesamiento, visualización y posterior análisis sirvió para encontrar al menos un 
+A lo largo del informe se explicó el procesamiento, las visualizaciones y el posterior análisis realizado que permitió encontrar al menos un 
 momento en el que se hizo una cantidad de búsquedas de manera anormal y la explicación detrás de ello, es decir, un evento excepcional
 como se planteó como objetivo del proyecto.
