@@ -77,7 +77,7 @@ El código fuente del algoritmo realizado para hacer el procesamiento se puede e
 
 El dataset que resulta de este procesamiento contiene la fecha y hora de búsqueda, información de la esquina como la longitud, latitud y el nombre de las calles que se intersectan. Además contiene la sumarización de la cantidad de veces que esa esquina fue buscada en la misma fecha y hora para luego hacer más ágil la visualización de la información y disminuir la carga de procesamiento de la herramienta utilizada.
 
-Observar que no se consideraron los minutos y segundos para obtener una cantidad mayor de búsquedas para la cada hora.
+Observar que no se consideraron los minutos y segundos para obtener una cantidad mayor de búsquedas para cada hora.
 
 A continuación se pueden ver las diez esquinas más buscadas y la cantidad para cada caso:
 
